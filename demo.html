@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!---<base href="https://mail.google.com/mail/u/0/#inbox" target="_blank"></base> --->
+    <title>Second Page</title>
+</head>
+<style>
+    #content{
+        color:rgb(23, 72,43);
+        text-decoration: underline;
+        text-decoration-color: green;
+    }
+</style>
+<body>
+
+
+Temp: <meter max="50" min="12" optimum="50" value="29"></meter><br>
+<a href="images/dog.jpg" download><br>Click here ---><br><img src="images/dog.jpg"></a>
+<img src="images/dog.jpg" heigth="50" width="150" usemap="#clickmap">
+<map name="clickmap">
+    <area shape="circle" coords="20,30,35" href="First.html">
+</map>
+<abbr title="World Health Organisation">WHO
+</abbr>
+<article> 
+    This is an example of article.
+    This is just an example.
+</article>
+<aside> 
+    This is an example of aside. 
+</aside>
+<address>
+    <pre>
+        8/2a, Glavia,
+        15th street, kuberan nagar
+        extension,madipakkam,
+        chennai -91.
+    </pre>
+</address>
+<code>
+&lt;/<>&gt;
+&lt;<^&*()&gt;
+<ol>
+    <li><a href="mail">Sign in</a></li>
+    <li>Maths</li>
+    <li>Chemistry</li>
+</ol>
+
+<ul>
+    <li><a href="pen.html">Apple</a></li>
+    <li>Mango</li>
+    <li>Kiwi</li>
+</ul>
+
+<label>Choose your Department :</label>
+<select>
+    <optgroup label="Engineering Dept">
+        <option>ECE</option>
+        <option>EEE</option>
+        <option>EIE</option>
+        <option>IT</option>
+    </optgroup>
+    <optgroup label="Arts Dept">
+        <option>BCA</option>
+        <option>CS</option>
+        <option>IT</option>
+        <option>AI</option>
+    </optgroup>
+</select>
+</code>
+
+<blockquote cite="First.html">
+    <p>Java Training,Front end
+        <p><cite title="from sabarinathan">By SABARINATHAN</cite>
+            </p>
+        Followed by backend
+    </p>
+</blockquote>
+
+<div style="text-align:center">
+    <button onclick="playPause()">Play/Pause</button>
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeSmall()">Small</button>
+    <button onclick="makeNormal()">Normal</button>
+    <br><br>
+    <video id="video1" width="420" controls>
+      <source src="mov_bbb.mp4" type="video/mp4">
+      <source src="mov_bbb.ogg" type="video/ogg">
+      Your browser does not support HTML video.
+    </video>
+  </div>
+  
+  <script>
+  var myVideo = document.getElementById("video1");
+  
+  function playPause() {
+    if (myVideo.paused)
+      myVideo.play();
+    else
+      myVideo.pause();
+  }
+  
+  function makeBig() {
+      myVideo.width = 560;
+  }
+  
+  function makeSmall() {
+      myVideo.width = 320;
+  }
+  
+  function makeNormal() {
+      myVideo.width = 420;
+  }
+  </script>
+  
+  <p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+
+<h3>Click to play the audio </h3>
+<audio controls>
+    <source src="horse.ogv" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+
+</body>
+</html>
